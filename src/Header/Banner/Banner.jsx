@@ -1,15 +1,28 @@
 import React from 'react';
+import banner from '../../assets/All-img/banner.jpg'
 
 const Banner = () => {
     return (
-        <div>
-            <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+        <div className=''>
+            <div className="hero h-[600px] bg-slate-100">
+                <div className="hero-content flex-col lg:flex-row-reverse  h-[600px] justify-between items-center">
+                    <img src={banner} className="w-[50%] rounded-lg shadow-2xl" />
+                    <div className='text-center lg:pl-10'>
+                        <h1 className="text-2xl font-bold ">Medical Fair Bangladesh 2023</h1>
+                        <p className="pt-5">Provide Comprehensive Quality Care</p>
+
+                        <p className="py-6 w-[470px]">
+                            Medical Fair BD is an Bangladeshi healthcare exhibition and conference that fosters and nurtures business relationships.
+                            With representatives from more than 20 countries participating, Medical Fair BD provides an opportunity to position the brand among competitors and further increase the level of visibility.</p>
+
+                        {/* Participation in the event promotes:
+
+                        detecting trends and responding to market pulses,
+                        learning about solutions for diverse healthcare needs,
+                        gaining new knowledge,
+                        learning about the latest digital technologies and new approaches shaping healthcare. */}
+
+                        <button className="btn btn-primary  w-[150px] ">VIEW Details</button>
                     </div>
                 </div>
             </div>

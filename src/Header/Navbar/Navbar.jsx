@@ -8,9 +8,8 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/service">Service</NavLink></li>
-        <li><NavLink to="/gallery">Gallery Pages</NavLink></li>
-        <li><NavLink to="/medicalistShop">Medicalist Shop</NavLink></li>
+        <li><NavLink to="/exhibitorlist">Exhibitors List</NavLink></li>
+        <li><NavLink to="/visitors">Visitor</NavLink></li>
         <li><NavLink to="/register">Register</NavLink></li>
         <li><NavLink to="/login">Login</NavLink></li>
     </>
@@ -20,11 +19,11 @@ const Navbar = () => {
         <div>
             <div>
                 <Marquee pauseOnHover={true}>
-                    <h1 className='text-5xl font-bold m-7'>Square Hospital </h1>
+                    <h1 className='text-3xl font-bold m-7'>Medical Fair Bangladesh 2023 </h1>
                 </Marquee>
                 
             </div>
-            <div className="navbar bg-base-100">
+            <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +36,7 @@ const Navbar = () => {
                     </div>
                     <div className='flex justify-between items-center'>
                         <img className='w-[50px] h-[50px] rounded-3xl mr-4' src={image} alt="" />
-                        <a className=" normal-case text-2xl font-bold">Hospital</a>
+                        <a className=" normal-case text-2xl font-bold">Clinical Consulting</a>
 
                     </div>
                     

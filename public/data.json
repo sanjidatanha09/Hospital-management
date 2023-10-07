@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "image": "/Resources/Health.png",
+    "name": "Medical Devices and Equipment",
+    "card_description": "Display and demonstrations of the latest medical devices and equipment, including imaging devices, surgical instruments, monitoring devices, and diagnostic tools",
+    "price": 280,
+    "details_description": "medical laboratories are indispensable components of the healthcare system, providing critical diagnostic information that aids in patient care, disease prevention, and medical research. Their accurate and reliable testing services are fundamental to modern healthcare practices, supporting healthcare providers in delivering high-quality and personalized medical treatment to patients."
+    
+  },
+  {
+    "id": "2",
+    "image": "/Resources/Education.png",
+    "name": " Pharmaceuticals and Drugs",
+    "card_description": "Showcase of pharmaceutical products, medications, and drugs, including both prescription and over-the-counter medications. ",
+    "price": 390,
+    "details_description": "Chaplains offer guidance, counseling, and religious services tailored to individuals' beliefs and needs. They provide comfort during crises, assist with bereavement, and promote interfaith understanding. Chaplains are valued members of healthcare and community teams, helping individuals find solace, meaning, and support in challenging circumstances."
+   
+  },
+  {
+    "id": "3",
+    "image": "/Resources/Clothing.png",
+    "name": "Healthcare IT and Software Solutions",
+    "card_description": "Presentation of healthcare information technology solutions, electronic health records (EHR) systems, telemedicine platforms, and other software applications designed for healthcare providers. ",
+    "price": 380,
+    "details_description": "pastoral education plays a crucial role in preparing individuals to offer spiritual guidance, emotional support, and counseling to people in need. By combining theological knowledge, counseling skills, and ethical principles, pastoral caregivers contribute significantly to the well-being of individuals and communities, fostering spiritual growth and resilience."
+   
+  },
+  {
+    "id": "4",
+    "image": "/Resources/Food.png",
+    "name": "Laboratory and Diagnostic Equipment",
+    "card_description": "Exhibition of laboratory equipment, diagnostic reagents, testing kits, and instruments used in medical laboratories for research and diagnostics.",
+    "price": 250,
+    "details_description": "Ensuring healthcare worker safety involves a multifaceted approach, encompassing infection control, injury prevention, mental health support, ongoing education, and comprehensive preparedness for various scenarios. Prioritizing the safety and well-being of healthcare workers not only protects them but also contributes to the delivery of high-quality patient care."
+    
+  },
+  {
+    "id": "5",
+    "image": "/Resources/Food3.webp",
+    "name": " Hospital and Clinic Furnishings",
+    "card_description": "Display of hospital and clinic furniture, including patient beds, examination tables, medical chairs, and other healthcare facility furnishings.",
+    "price": 240,
+    "details_description": "therapy services encompass a diverse range of interventions tailored to address various mental, emotional, and physical challenges. These services are provided by trained professionals and aim to enhance individuals' overall quality of life and well-being."
+    
+  },
+  {
+    "id": "6",
+    "image": "/Resources/Clothing_2_shoes.jpg",
+    "name": "Medical Supplies and Consumables",
+    "card_description": "Suppliers showcasing medical consumables such as syringes, gloves, bandages, wound care products, and other medical supplies used in healthcare settings.",
+    "price": 180,
+    "details_description": "Medical supplies and consumables refer to a wide range of products used in healthcare settings for various medical purposes. These items are essential for patient care, medical procedures, and maintaining the hygiene and safety standards of healthcare facilities.like -Gloves: Latex, nitrile, or vinyl gloves used for hand protection during medical procedures and examinations.Masks: Surgical masks, N95 respirators, and face shields protect healthcare workers and patients from airborne contaminants.  "
+    
+  }
+]
