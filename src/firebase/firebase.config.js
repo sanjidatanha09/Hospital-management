@@ -4,13 +4,16 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+// console.log('inside firebase config', import.meta.env.VITE_PASS)
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBwABmOaS8PaZE4GkmRYNq0NuzTFIbvxZY",
-    authDomain: "react-dragon-news-auth-4b5f4.firebaseapp.com",
-    projectId: "react-dragon-news-auth-4b5f4",
-    storageBucket: "react-dragon-news-auth-4b5f4.appspot.com",
-    messagingSenderId: "371285360274",
-    appId: "1:371285360274:web:9a33efd04549a87123704b"
+    apiKey: "AIzaSyCXeFDRgJug8s02mX6nb2cnBVPYO4a0JYM",
+    authDomain: "hospital-management-f641c.firebaseapp.com",
+    projectId: "hospital-management-f641c",
+    storageBucket: "hospital-management-f641c.appspot.com",
+    messagingSenderId: "112522867697",
+    appId: "1:112522867697:web:99333a189654f97f0a8a50"
 };
 
 // Initialize Firebase

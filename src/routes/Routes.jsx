@@ -5,11 +5,11 @@ import Home from "../pages/Home/Home";
 
 import ExhibitorList from "../pages/ExhibitorList/ExhibitorList";
 import Visitors from "../pages/Visitors/Visitors";
-import Service from "../Component/Service/Service";
-import Login from "../pages/Login/Login";
-import Registration from "../pages/Registration/Registration";
 import ServiceDetails from "../Component/Service/ServiceDetails";
 import Errorpage from "../Errorpage/Errorpage";
+import Login from "../pages/Login/Login";
+import Registration from "../pages/Registration/Registration";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         
             {
                 path: '/servi/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader: () => fetch('/data.json'),
             },
 

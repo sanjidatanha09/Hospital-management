@@ -3,26 +3,24 @@ import { Link, NavLink } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import image from "../../assets/All-img/hospital-symbol.jpg"
 import { FaConnectdevelop } from 'react-icons/fa';
-import { AuthContext } from '../../Hook/Authprovider';
+import { AuthContext } from '../../Providers/AuthProvider';
+
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
-   
-    const handleSignOut = () =>{
-        logOut()
-        .then()
-        .catch()
+    const { user, logOUt } = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        logOUt()
+            .then()
+            .catch()
 
     }
-
-    
-
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/exhibitorlist">Exhibitors List</NavLink></li>
         <li><NavLink to="/visitors">Visitor</NavLink></li>
-        {/* <li><NavLink to="/login">Login</NavLink></li> */}
+
     </>
 
 
@@ -61,9 +59,11 @@ const Navbar = () => {
                 <div className="navbar-end ">
 
                     <div className='flex justify-end items-center gap-5'>
+
+
                         {
                             user ?
-                                <button onClick={handleSignOut} className='btn'>Sign Out</button>
+                                <button onClick={handleSignOut} className='btn'>Log Out</button>
 
                                 :
                                 <Link to="/login">
