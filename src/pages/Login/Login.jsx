@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { FaGithub, FaGofore } from 'react-icons/fa';
 
 const Login = () => {
     const { googleSignIn } =useContext(AuthContext)
@@ -8,6 +9,12 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate()
     console.log('location login page',location)
+
+    const handleGoogle = () => {
+        googleSignIn().then(result => {
+            console.log(result.user)
+        });
+    };
 
 
 
@@ -54,13 +61,29 @@ const Login = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary ">Login</button>
+                    <button  className="btn btn-primary ">Login</button>
                 </div>
+               
 
 
 
 
             </form>
+            <div className='text-center mt-5'>
+                <h2 className="text-lg mb-2 font-bold ">or Login With</h2>
+                <div className='flex  gap-5 justify-center items-center'>
+                    <button onClick={handleGoogle} className='btn '>
+                        <FaGofore></FaGofore>Google
+                    </button>
+                    <br />
+                    <button className='btn '>
+                        <FaGithub></FaGithub>Github
+                    </button>
+
+                </div>
+
+
+            </div>
             <p>Dont have an account? <Link className='text-blue-600' to="/registration">Register</Link> </p>
         </div>
     );
