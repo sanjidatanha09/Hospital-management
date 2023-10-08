@@ -2,32 +2,31 @@
 import { Routes, createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../pages/Home/Home";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
+
 import ExhibitorList from "../pages/ExhibitorList/ExhibitorList";
 import Visitors from "../pages/Visitors/Visitors";
 import Service from "../Component/Service/Service";
+import Login from "../pages/Login/Login";
+import Registration from "../pages/Registration/Registration";
+import ServiceDetails from "../Component/Service/ServiceDetails";
+import Errorpage from "../Errorpage/Errorpage";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement:<Errorpage></Errorpage>,
         children: [
             {
                 path:'/',
                 element:<Home></Home>,
-            },
-            
-
-            {
-                path: '/service',
-                element: <Service></Service>,
                 loader: () => fetch('/data.json'),
             },
+        
             {
-                path: '/serviceDetails',
-                element: <Visitors></Visitors>,
+                path: '/servi/:id',
+                element: <ServiceDetails></ServiceDetails>,
                 loader: () => fetch('/data.json'),
             },
 
@@ -46,8 +45,8 @@ const router = createBrowserRouter([
                 element: <Login></Login>,
             },
             {
-                path: '/register',
-                element: <Register></Register>,
+                path: '/registration',
+                element: <Registration></Registration>,
             }
 
         ]

@@ -1,17 +1,28 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import image from "../../assets/All-img/hospital-symbol.jpg"
 import { FaConnectdevelop } from 'react-icons/fa';
+import { AuthContext } from '../../Hook/Authprovider';
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+   
+    const handleSignOut = () =>{
+        logOut()
+        .then()
+        .catch()
+
+    }
+
+    
+
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/exhibitorlist">Exhibitors List</NavLink></li>
         <li><NavLink to="/visitors">Visitor</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
+        {/* <li><NavLink to="/login">Login</NavLink></li> */}
     </>
 
 
@@ -21,7 +32,7 @@ const Navbar = () => {
                 <Marquee pauseOnHover={true}>
                     <h1 className='text-3xl font-bold m-7'>Medical Fair Bangladesh 2023 </h1>
                 </Marquee>
-                
+
             </div>
             <div className="navbar ">
                 <div className="navbar-start">
@@ -39,7 +50,7 @@ const Navbar = () => {
                         <a className=" normal-case text-2xl font-bold">Clinical Consulting</a>
 
                     </div>
-                    
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -47,15 +58,31 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end">
-                   
-                        
-                    <a className="btn"><FaConnectdevelop></FaConnectdevelop>Button</a>
-                        
+                <div className="navbar-end ">
 
-                   
+                    <div className='flex justify-end items-center gap-5'>
+                        {
+                            user ?
+                                <button onClick={handleSignOut} className='btn'>Sign Out</button>
+
+                                :
+                                <Link to="/login">
+                                    <button className='btn'>Login</button>
+                                </Link>
+
+                        }
+                        <p>{user?.email}</p>
+
+                    </div>
+
+
+                    {/* <a className="btn"><FaConnectdevelop></FaConnectdevelop>Button</a> */}
+
+
                 </div>
             </div>
+
+
         </div>
     );
 };

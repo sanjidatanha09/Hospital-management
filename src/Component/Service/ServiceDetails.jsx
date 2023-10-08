@@ -1,36 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import ServiceDetails2 from './ServiceDetails2';
+
 
 const ServiceDetails = () => {
 
-    const servi= useLoaderData();
-    const {id} =useParams();
-    const idInt = parseInt(id);
-    const serv= servi.find(servi.id === idInt);
+    const [servicedetailscard , setServicedetailscard] = useState();
 
-    console.log(serv);
+    const {id} = useParams()
+   
+    
+    const detailCard = useLoaderData();
 
-    const handleApplybtn = () =>{
-        saveServiceApplication(idInt);//localstorage theke asbe eta 
-        alert('sucess')
-    }
+    useEffect(() =>{
+        
+        const findCard = detailCard?.find(servicedetailscard => servicedetailscard.id === id);
+        setServicedetailscard(findCard);
+
+
+    }, [id,detailCard]);
+
+    // console.log(servicedetailscard)
+
+
+    
+
     return (
         <div>
-            <div className='grid   gap-4 md:grid-cols-2 lg:grid-cols-3'>
-                <div className='border md:col-span-3'>
-                    <h2> DEtails come </h2>
-                    <h2>job details of:{serv.job_title}</h2>
-                    <p>{serv.kcomapy}</p>
-
-                </div>
-
-                <div>
-                    <h2>
-                        side thing
-                    </h2>
-                    <button onClick={handleApplybtn}>click</button>
-                </div>
-            </div>
+            <ServiceDetails2 servicedetailscard={servicedetailscard}></ServiceDetails2>
+    
         </div>
     );
 };
