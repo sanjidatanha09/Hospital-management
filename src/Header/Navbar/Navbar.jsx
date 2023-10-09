@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import image from "../../assets/All-img/hospital-symbol.jpg"
 import { FaConnectdevelop } from 'react-icons/fa';
 import { AuthContext } from '../../Providers/AuthProvider';
-import { FaGithub, FaGofore } from 'react-icons/fa';
+import { FaGithub, FaGofore, FaUserCircle } from 'react-icons/fa';
 
 
 
@@ -69,14 +69,15 @@ const Navbar = () => {
                                 <button onClick={handleSignOut} className='btn btn-neutral'>Log Out</button>
 
                                 :
-                                <Link to="/login">
+                                <Link className='flex justify-center items-center gap-3' to="/login"><FaUserCircle className='lg:text-5xl'></FaUserCircle>
                                     <button className='btn text-sm lg:text-xl lg:font-bold btn-neutral'>Login</button>
+                                    
                                 </Link>
 
                         }
                         <div>
                             <p className='text-sm font-bold'>{user?.email}</p>
-                            <img src="" alt="" />
+                           
 
                         </div>
                        

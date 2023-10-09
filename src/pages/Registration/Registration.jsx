@@ -122,6 +122,8 @@ const Registration = () => {
 
 
                 </form>
+
+                
                 <p className='font-bold mb-3'>Already have an account? <Link className='text-blue-600 font-bold' to="/login">Login</Link> </p>
            </div>
             <ToastContainer />

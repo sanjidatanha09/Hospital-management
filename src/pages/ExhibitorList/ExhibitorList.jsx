@@ -8,7 +8,7 @@ import img4 from '../../assets/All-img/confa4.png'
 const ExhibitorList = () => {
     return (
         <div>
-            <Banner></Banner>
+            
             <div className='my-16'>
                 <h1 className='text-2xl lg:text-5xl font-bold  pb-10'>Conferences & Forums Overview</h1>
 

@@ -35,12 +35,12 @@ const router = createBrowserRouter([
 
             {
                 path: '/exhibitorlist',
-                element: <ExhibitorList></ExhibitorList>,
+                element: <PrivateRoute><ExhibitorList></ExhibitorList></PrivateRoute>,
             },
 
             {
                 path: '/visitors',
-                element: <Visitors></Visitors>,
+                element: <PrivateRoute><Visitors></Visitors></PrivateRoute>,
             },
             {
                 path: '/login',
