@@ -14,15 +14,15 @@ const Home = () => {
     // console.log(servic)
    
     return (
-        <div>
+        <div >
 
             
             <Banner></Banner>
             
             <div >
                 <div className='text-center my-10'>
-                    <p className='text-black'>Our Commitment Is To Provide Comprehensive Quality Care</p>
-                    <p className='font-bold text-3xl text text-black'> Our Services</p>
+                    <p className='text-black font-medium text-sm lg:text-xl pb-2'>Our Commitment Is To Provide Comprehensive Quality Care</p>
+                    <p className='font-bold text-3xl lg:text-5xl  text-black'> Our Services</p>
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {

@@ -3,17 +3,19 @@ import banner from '../../assets/All-img/banner.jpg'
 
 const Banner = () => {
     return (
-        <div className=''>
+        <div className='' >
             <div className="hero h-[600px] bg-slate-100">
                 <div className="hero-content flex-col lg:flex-row-reverse  h-[600px] justify-between items-center">
-                    <img src={banner} className="w-[50%] rounded-lg shadow-2xl" />
-                    <div className='text-center lg:pl-10'>
-                        <h1 className="text-2xl font-bold ">Medical Fair Bangladesh 2023</h1>
-                        <p className="pt-5">Provide Comprehensive Quality Care</p>
+                    <img src={banner} className="lg:w-[50%] h-full rounded-xl lg:rounded-full shadow-2xl" />
+                    <div className='text-center lg:pl-10' data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <h1 className="text-xl lg:text-3xl font-bold ">Medical Fair Bangladesh 2023</h1>
+                        <p className="pt-5 lg:text-xl font-medium">Provide Comprehensive Quality Care</p>
 
-                        <p className="py-6 w-[470px]">
+                        <p className="py-6 lg:w-[470px] text-sm font-medium">
                             Medical Fair BD is an Bangladeshi healthcare exhibition and conference that fosters and nurtures business relationships.
-                            With representatives from more than 20 countries participating, Medical Fair BD provides an opportunity to position the brand among competitors and further increase the level of visibility.</p>
+                            With representatives from more than 20 countries participating.</p>
 
                         {/* Participation in the event promotes:
 
@@ -22,7 +24,7 @@ const Banner = () => {
                         gaining new knowledge,
                         learning about the latest digital technologies and new approaches shaping healthcare. */}
 
-                        <button className="btn btn-primary  w-[150px] ">VIEW Details</button>
+                        <button className="btn btn-neutral  w-[150px] ">VIEW Details</button>
                     </div>
                 </div>
             </div>

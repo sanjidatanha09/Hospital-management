@@ -7,9 +7,11 @@ import ExhibitorList from "../pages/ExhibitorList/ExhibitorList";
 import Visitors from "../pages/Visitors/Visitors";
 import ServiceDetails from "../Component/Service/ServiceDetails";
 import Errorpage from "../Errorpage/Errorpage";
+import PrivateRoute from "./PrivateRoute";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
-import PrivateRoute from "./PrivateRoute";
+
+
 
 
 const router = createBrowserRouter([
@@ -46,7 +48,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/registration',
-                element: <Registration></Registration>,
+                element:<Registration></Registration>,
             }
 
         ]
