@@ -23,18 +23,14 @@ const AttendFair = () => {
 
                     </div>
                 </div>
-
-
                 <div className='grid lg:grid-cols-3'>
                     <div className="card-body  border">
                         <h2 className="card-title lg:text-3xl font-bold">Trends</h2>
                         <p className='font-medium lg:text-xl'>MEDICAL FAIR INDIA is well known for its ability to detect trends and respond to market impulse.</p>
-
                     </div>
                     <div className="card-body  border">
                         <h2 className="card-title lg:text-3xl font-bold">Solutions</h2>
                         <p className='font-medium lg:text-xl'>Find diverse solutions to your diverse healthcare needs.</p>
-
                     </div>
                     <div className="card-body  border">
                         <h2 className="card-title lg:text-3xl font-bold">Innovations</h2>
